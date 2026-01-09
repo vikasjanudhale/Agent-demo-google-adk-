@@ -7,7 +7,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 from google.adk.apps import App
 from google.adk.plugins.save_files_as_artifacts_plugin import SaveFilesAsArtifactsPlugin
 
-from multi_tool_agents.sub_agent import rag_piplinene_agent,Answering_agent
+from agentic_rag_bot.sub_agent import rag_piplinene_agent,Answering_agent
 load_dotenv()
 main_flow_agent=LlmAgent(
     name="HelpDeskRagCoordinator",
@@ -28,7 +28,7 @@ root_agent=main_flow_agent
 
 
 app=app = App(
-    name="multi_tool_agents",
+    name="agentic_rag_bot",
     root_agent=root_agent,
     plugins=[SaveFilesAsArtifactsPlugin()], # This line enables auto-saving of uploads
 )

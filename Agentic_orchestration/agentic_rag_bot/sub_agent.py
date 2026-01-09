@@ -7,7 +7,7 @@ from google.adk.agents import SequentialAgent,LlmAgent
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 load_dotenv()
-from multi_tool_agents.tools import check_uploded_documents,chunk_embedding_vectore_store,query_document
+from agentic_rag_bot.tools import check_uploded_documents,chunk_embedding_vectore_store,query_document
 
 chunk_embedded_vectores_agent=LlmAgent(
     name="chunk_embedded_vectores_agent",
